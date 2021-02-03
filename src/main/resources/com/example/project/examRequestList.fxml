@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Group?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="560.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.controlers.examRequestController">
+   <children>
+      <BorderPane layoutX="-1.0" prefHeight="400.0" prefWidth="560.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <center>
+            <Group>
+               <children>
+                  <ListView fx:id="examsList" layoutX="1.0" prefHeight="345.0" prefWidth="560.0" />
+                  <Button fx:id="backBtn" layoutX="11.0" layoutY="357.0" mnemonicParsing="false" onAction="#goBack" prefHeight="26.0" prefWidth="86.0" style="-fx-background-radius: 30;" text="BACK">
+                     <font>
+                        <Font name="Arial" size="12.0" />
+                     </font>
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                  </Button>
+                  <Separator layoutX="101.0" layoutY="345.0" orientation="VERTICAL" prefHeight="53.0" prefWidth="8.0" />
+                  <Button fx:id="rejectBTN" layoutX="113.0" layoutY="357.0" mnemonicParsing="false" onAction="#RejectReq" prefHeight="26.0" prefWidth="86.0" style="-fx-background-radius: 30;" text="Reject">
+                     <font>
+                        <Font name="Arial" size="12.0" />
+                     </font>
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                  </Button>
+                  <Button fx:id="acceptBTN" layoutX="212.0" layoutY="358.0" mnemonicParsing="false" onAction="#AcceptReq" prefHeight="26.0" prefWidth="86.0" style="-fx-background-radius: 30;" text="Accept">
+                     <font>
+                        <Font name="Arial" size="12.0" />
+                     </font>
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                  </Button>
+                  <Separator layoutX="203.0" layoutY="346.0" orientation="VERTICAL" prefHeight="53.0" prefWidth="8.0" />
+                  <Separator layoutY="345.0" prefHeight="4.0" prefWidth="560.0" />
+               </children>
+            </Group>
+         </center>
+      </BorderPane>
+   </children>
+</AnchorPane>
